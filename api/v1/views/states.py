@@ -6,6 +6,18 @@ from models import storage
 from models.state import State
 
 
+"""
+This module defines the routes for interacting with State objects in the API.
+
+Routes:
+- GET /states: retrieves a list of all State objects
+- GET /states/<state_id>: retrieves a specific State object by ID
+- POST /states: creates a new State object
+- PUT /states/<state_id>: updates an existing State object
+- DELETE /states/<state_id>: deletes a State object by ID
+"""
+
+
 @app_views.route("/states", methods=['GET'], strict_slashes=False)
 def states():
     """method retrieves list of all State objects in JSON format"""
