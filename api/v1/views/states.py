@@ -4,8 +4,6 @@ from api.v1.views import app_views
 from flask import jsonify, abort, request
 from models import storage
 from models.state import State
-
-
 """
 This module defines the routes for interacting with State objects in the API.
 
