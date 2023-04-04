@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script creates a route that returns status in JSON format."""
+""" Task 7 """
 from api.v1.views import app_views
 from flask import jsonify, abort, request
 from models import storage
